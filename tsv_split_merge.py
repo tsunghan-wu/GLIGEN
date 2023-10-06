@@ -267,9 +267,10 @@ def merge(merge_in_folder, merge_out_folder):
 
     files = os.listdir(merge_in_folder)
     N = len(files)
-
-    lineidx_files = files[0:N//2]
-    tsv_files = files[N//2:N]
+    lineidx_files = [file for file in files if file.endswith(".lineidx")]
+    tsv_files = [file for file in files if file.endswith(".tsv")]
+    # lineidx_files = files[0:N//2]
+    # tsv_files = files[N//2:N]
 
 
     if os.path.isdir(merge_out_folder):

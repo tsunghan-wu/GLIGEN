@@ -10,7 +10,7 @@ class DatasetCatalog:
         self.VGGrounding = {   
             "target": "dataset.tsv_dataset.TSVDataset",
             "train_params": dict(
-                tsv_path=os.path.join(ROOT,'GROUNDING/gqa/tsv/train-00.tsv'),
+                tsv_path=os.path.join('/home/patrickwu/gligen_data/vg_merged/train-00.tsv'),
             ),
         }
 
@@ -21,7 +21,7 @@ class DatasetCatalog:
         self.FlickrGrounding = {
             "target": "dataset.tsv_dataset.TSVDataset",
             "train_params":dict(
-                tsv_path=os.path.join(ROOT,'GROUNDING/flickr30k/tsv/train-00.tsv'),
+                tsv_path=os.path.join('/home/patrickwu/gligen_data/flicker30k_merged/train-00.tsv'),
             ),
         }
 
@@ -31,7 +31,7 @@ class DatasetCatalog:
         self.SBUGrounding = {   
             "target": "dataset.tsv_dataset.TSVDataset",
             "train_params":dict(
-                tsv_path=os.path.join(ROOT,'GROUNDING/SBU/tsv/train-00.tsv'),
+                tsv_path=os.path.join('/home/patrickwu/gligen_data/sbu_merged/train-00.tsv'),
             ),
          }
 
@@ -42,7 +42,7 @@ class DatasetCatalog:
         self.CC3MGrounding = {   
             "target": "dataset.tsv_dataset.TSVDataset",
             "train_params":dict(
-                tsv_path=os.path.join(ROOT,'GROUNDING/CC3M/tsv/train-00.tsv'),
+                tsv_path=os.path.join('/home/patrickwu/gligen_data/cc3m_merged/train-00.tsv'),
             ),
         }
 
@@ -94,7 +94,7 @@ class DatasetCatalog:
         self.Obj365Detection = {   
             "target": "dataset.tsv_dataset.TSVDataset",
             "train_params":dict(
-                tsv_path=os.path.join(ROOT,'OBJECTS365/tsv/train-00.tsv'),
+                tsv_path=os.path.join('/home/patrickwu/gligen_data/o365_merged/train-00.tsv'),
             ),
         }
 
